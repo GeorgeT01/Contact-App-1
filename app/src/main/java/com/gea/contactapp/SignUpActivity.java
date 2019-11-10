@@ -35,7 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
     private Button signUpButton;
     private boolean validSignUp;
     private Context context;
-    private String jsonURL = "https://test.baity.com.br/user/create.php";
+    private String jsonURL = "";
     private static ProgressDialog mProgressDialog;
     private static String _password;
     private static String _email;
