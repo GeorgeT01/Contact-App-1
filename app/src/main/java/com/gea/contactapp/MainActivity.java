@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     Button loginBtn;
     TextView goToSignUp;
     private EditText emailTxt, passwordTxt;
-    private String jsonURL = "https://test.baity.com.br/user/login.php";
+    private String jsonURL = "";
     private static ProgressDialog mProgressDialog;
     private Context context;
     private static String _password;
