@@ -35,7 +35,7 @@ import java.util.HashMap;
 public class HomeActivity extends AppCompatActivity {
     private Session session;
     private Context context;
-    private String jsonURL = "https://test.baity.com.br/contact/read_user_contacts.php";
+    private String jsonURL = "";
     private String _user_id;
     private ArrayList<ContactModel> contactModelArrayList;
     private FloatingActionButton addContactFloatingBtn;
