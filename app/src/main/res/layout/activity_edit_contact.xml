@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditContactActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/editContactImage"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/user"/>
+
+                <EditText
+                    android:id="@+id/editContactName"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="Name"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:inputType="textCapSentences"
+                    tools:ignore="Autofill"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editContactEmail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="Email Address"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:paddingRight="20dp"
+                android:paddingEnd="20dp"
+                android:inputType="textEmailAddress"
+                tools:ignore="Autofill" />
+            <EditText
+                android:id="@+id/editContactPhone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="Phone Number"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:paddingRight="20dp"
+                android:paddingEnd="20dp"
+                android:inputType="phone"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#111111"/>
+            <Button
+                android:id="@+id/editContactDate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/datepicker_btn"
+                android:text="05.11.2018"
+                android:textColor="#111111"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="#111111"/>
+            <Spinner
+                android:id="@+id/editContactGender"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/spinner"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="2dp"/>
+
+
+
+            <EditText
+                android:id="@+id/editContactNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lines="8"
+                android:maxLines="10"
+                android:textColor="#111111"
+                android:scrollbars="vertical"
+                android:gravity="start"
+                android:paddingLeft="20sp"
+                android:paddingStart="20sp"
+                android:paddingRight="20sp"
+                android:paddingEnd="20sp"
+                android:paddingTop="20sp"
+                android:inputType="textMultiLine|textCapSentences"
+                android:background="@drawable/edittext_custom"
+                android:hint="Notes"
+                android:minLines="6"
+                android:maxLength="140" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
