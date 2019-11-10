@@ -57,7 +57,7 @@ public class EditContactActivity extends AppCompatActivity {
     private Uri selectedImage;
     private Spinner contactGender;
     private ProgressDialog progressDialog;
-    private String jsonURL = "https://test.baity.com.br/contact/update_contact.php";
+    private String jsonURL = "";
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
