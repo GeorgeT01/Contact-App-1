@@ -56,7 +56,7 @@ public class AddContactActivity extends AppCompatActivity {
     private boolean imageSelected;
     private Uri selectedImage;
     private Session session;
-    private String jsonURL = "https://test.baity.com.br/contact/add_new_contact.php";
+    private String jsonURL = "";
     ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
