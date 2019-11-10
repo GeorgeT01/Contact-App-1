@@ -180,7 +180,7 @@ public class ContactAdapter extends RecyclerView.Adapter<RecyclerViewHolder> imp
                 HashMap<String, String> map=new HashMap<>();
                 map.put("ContactId",_contact_ic);
                 try {
-                    HttpsRequest req = new HttpsRequest("https://test.baity.com.br/contact/delete_contact.php");
+                    HttpsRequest req = new HttpsRequest("");
                     response = req.prepare(HttpsRequest.Method.POST).withData(map).sendAndReadString();
 
                 } catch (Exception e) {
