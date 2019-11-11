@@ -1,5 +1,5 @@
 # Contact App
-A project with Implementation of a Contacts app using API. It consist some common operations like create, edit , search and view operations on Contacts. Contacts in this project are not linked with the contacts stored in your Smart phone.
+A project with Implementation of a Contacts app using API. It consist some common operations like create, edit , delete, search and view operations on Contacts. Contacts in this project are not linked with the contacts stored in your Smart phone.
 
 # Built With
 JAVA
